@@ -1,0 +1,69 @@
+<div class="container-fluid my-5">
+
+    <div class="card bg-light">
+        <article class="card-body mx-auto" style="max-width: 400px;">
+            <h4 class="card-title mt-3 text-center">Create Account</h4>
+
+
+            <form [formGroup]="registerForm" (ngSubmit)="signUp()">
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+
+                    </div>
+                    <input formControlName="userName" name="" class="form-control my-2" placeholder="User-Name"
+                        type="text">
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+
+                    </div>
+                    <input formControlName="mail" class="form-control my-2" placeholder="Email address" type="email">
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+
+                    </div>
+                    <select class="custom-select" style="max-width: 120px;">
+                        <option selected="">+91</option>
+                        <option value="1">+92</option>
+                        <option value="2">+98</option>
+                        <option value="3">+99</option>
+                    </select>
+                    <input formControlName="mobile" class="form-control my-2" placeholder="Phone number" type="text">
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+
+                    </div>
+                </div> <!-- form-group end.// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+
+                    </div>
+                    <input formControlName="password" class="form-control my-2" placeholder="Create password"
+                        type="password">
+                </div> <!-- form-group// -->
+                <div class="form-group input-group">
+                    <div class="input-group-prepend">
+
+                    </div>
+                    <input formControlName="vpassword" class="form-control my-2" placeholder="Confirm password"
+                        type="password">
+                </div> <!-- form-group// -->
+                <div class="form-group">
+                    <button type="submit" (click)="registerForm" class="btn btn-primary btn-block"> Create Account
+                    </button>
+                </div> <!-- form-group// -->
+                <p class="text-center">Have an account? <a href="">Log In</a> </p>
+            </form>
+        </article>
+    </div> <!-- card.// -->
+    <div
+        class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+        <!-- Copyright -->
+        <div class="text-white mb-1 mb-md-0">
+            Register for free.
+        </div>
+
+    </div>
+</div>

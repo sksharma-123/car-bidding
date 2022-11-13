@@ -1,0 +1,55 @@
+<div  class="container"> 
+    <!-- *ngIf ="let data of data" -->
+   
+	<div *ngFor="let val of cars" class="row" id="ads">
+    
+    <div class="col-md-4">
+        <div class="card rounded">
+            <div class="card-image">
+                <img class="img-fluid" src="/assets/images/{{val.carNo}}.jpg" alt="Alternate Text" />
+            </div>
+            <div  class="card-image-overlay m-auto">
+                <span class="card-detail-badge">car model:{{val.model}}</span>
+                <span class="card-detail-badge">car no:{{val.carNo}}</span>
+                <span class="card-detail-badge">used {{val.km}} km</span>
+                <span class="card-detail-badge"> {{val.gearType}} Gear</span>
+                <span class="card-detail-badge"> {{val.fuelType}}</span>
+                <span class="card-detail-badge"> {{val.descrip}}</span>
+                <span class="card-detail-badge">Base price:{{val.price}}</span>
+            </div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+<!-- 
+<table class="table align-middle mb-0 bg-white">
+    <thead class="bg-light">
+      <tr>
+        <th>Bidded user</th>
+        <th>mobile</th>
+        <th>price</th>
+      </tr>
+    </thead>
+
+    <tbody *ngFor="let vals of cars">
+      <tr>
+        <td>
+          {{vals.bidUsername}}
+        </td>
+        <td>
+          {{vals.mobile}}
+        </td>
+       
+        <td>{{vals.bidPrice}}</td>
+      
+      </tr>
+    </tbody>
+  </table>  -->

@@ -1,0 +1,73 @@
+<main>
+    <div class="container-fluid bg-trasparent my-4 p-3" style="position: relative;">
+        <div class="row row-cols-1 row-cols-xs-2 row-cols-sm-2 row-cols-lg-4 g-3">
+            <div class="col">
+                <div class="card h-100 shadow-sm">
+                    <img src="https://images.unsplash.com/photo-1545609904-f2f11654638d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1029&q=80"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <button routerLinkActive="active" routerLink="/add-car" (click)="toAddCar()" href="#"
+                            class="btn btn-warning">Add car</button>
+                        <!-- <button routerLinkActive="active" routerLink="/admin-login" (click)="updateCar()" href="#" type="button" class="btn btn-warning">update car</button>
+                            <button routerLinkActive="active" routerLink="/admin-login" (click)="deleteCar()" href="#" type="button" class="btn btn-warning">delete car</button> -->
+
+                        <div class="clearfix mb-1"> <span class="float-start"><i
+                                    class="far fa-question-circle"></i></span> <span class="float-end"><i
+                                    class="fas fa-plus"></i></span> </div>
+                    </div>
+
+
+
+
+
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm"> <img
+                        src="https://plus.unsplash.com/premium_photo-1661292096842-8d01399173f6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80"
+                        class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <button class="d-grid gap-2 my-4" routerLinkActive="active" routerLink="owner-details" href="#"
+                            (click)="toAddOwner()" class="btn btn-warning">Owner Details</button>
+                        <div class="clearfix mb-1"> <span class="float-start"><i
+                                    class="far fa-question-circle"></i></span> <span class="float-end"><i
+                                    class="fas fa-plus"></i></span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm"> <img
+                        src="https://images.unsplash.com/photo-1621808752171-531c30903889?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Y2FyJTIwY29sbGVjdGlvbnxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=600&q=60"
+                        class="card-img-top" alt="...">
+
+                    <div class="card-body">
+                        <h5 class="card-title"></h5>
+                        <button class="d-grid gap-2 my-4" routerLinkActive="active" href="#" routerLink="car-sold"
+                            (click)="gotoBidding()" class="btn btn-warning">car in Bidding</button>
+                        <div class="clearfix mb-1"> <span class="float-start"><i
+                                    class="far fa-question-circle"></i></span> <span class="float-end"><i
+                                    class="fas fa-plus"></i></span> </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card h-100 shadow-sm"> <img
+                        src="https://images.unsplash.com/photo-1637494873826-795116ba38cc?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGNhciUyMGNvbGxlY3Rpb258ZW58MHx8MHx8&auto=format&fit=crop&w=600&q=60"
+                        class="card-img-top" alt="...">
+
+                    <div class="card-body">
+
+                        <h5 class="card-title"></h5>
+                        <button class="d-grid gap-2 my-4" routerLinkActive="active" href="#" routerLink="car-sold"
+                            (click)="car_sold()" class="btn btn-warning">Sold Cars</button>
+                        <div class="clearfix mb-1"> <span class="float-start"><i
+                                    class="far fa-question-circle"></i></span> <span class="float-end"><i
+                                    class="fas fa-plus"></i></span> </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>

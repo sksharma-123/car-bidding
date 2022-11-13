@@ -1,0 +1,24 @@
+<div class="card">
+    <form  [formGroup]="bidForm" >
+    <div class="bg-image hover-overlay ripple" data-mdb-ripple-color="light">
+      <img src="/assets/images/KH07 JH0877.jpg" alt="Alternate Text" class="img-fluid"/>
+      <a href="#!">
+        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+      </a>
+    </div>
+    
+        <div class="form-group">
+            <input formControlName="biddername" type="text" class="form-control" placeholder="name">
+        </div>
+        <div class="form-group">
+            <input formControlName="mobileNo" type="text" class="form-control" placeholder="Enter mobile number enter">
+        </div>
+        <div class="form-group">
+            <input formControlName="bidPrice" type="number" class="form-control" placeholder="Enter your bidding price">
+        </div>
+    
+    <!-- form -->
+    <button type="submit" class="btn btn-primary btn-lg"
+    style="padding-left: 2.5rem; padding-right: 2.5rem;" (click)="addBid()" routerLinkActive="active">Bid</button>
+</form>
+</div> <!-- form-group// -->

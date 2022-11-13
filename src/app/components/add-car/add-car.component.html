@@ -1,0 +1,40 @@
+<div class="container my-5 p-5 border rounded bg-info bg-gradient">
+    <h2 class="text-center">Registration Info</h2>
+    <div class="row px-5 my-5">
+        <form [formGroup]="add_Car" (ngSubmit)="addCar()" style="width: 70%; margin: auto;">
+            <div class="mb-3">
+                <label for="text1" class="form-label">Car Number</label>
+                <input formControlName="carNo" type="text" class="form-control" id="text1">
+            </div>
+            <div class="mb-3">
+                <label for="text2" class="form-label">Gear Type</label>
+                <input formControlName="gearType" type="text" class="form-control" id="text2">
+            </div>
+            <div class="mb-3">
+                <label for="text3" class="form-label">Features of Car</label>
+                <input formControlName="descrip" type="text" class="form-control" id="text3">
+            </div>
+            <div class="mb-3">
+                <label for="text4" class="form-label">Fuel Type</label>
+                <input formControlName="fuelType" type="text" class="form-control" id="text4">
+            </div>
+            <div class="mb-3">
+                <label for="text5" class="form-label">Model Year</label>
+                <input formControlName="model" type="text" class="form-control" id="text5">
+            </div>
+            <div class="mb-3">
+                <label for="text6" class="form-label">Kilometer Used</label>
+                <input formControlName="km" type="text" class="form-control" id="text6">
+            </div>
+            <div class="mb-3">
+                <label for="text7" class="form-label">0-sold 1-in bidding</label>
+                <input formControlName="status" type="text" class="form-control" id="text7">
+            </div>
+            <div class="mb-3">
+                <label for="text8" class="form-label">Base price of the car</label>
+                <input formControlName="price" type="text" class="form-control" id="text8">
+            </div>
+            <button (click)="addCar" type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+</div>

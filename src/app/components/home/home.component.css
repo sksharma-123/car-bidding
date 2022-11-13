@@ -1,0 +1,9 @@
+.background {
+    background: url("https://images.unsplash.com/photo-1613234259978-98229fb76d9d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    color: #fff;
+    height: 550px;
+    padding-top: 50px;
+}
