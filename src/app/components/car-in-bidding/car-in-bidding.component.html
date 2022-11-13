@@ -1,21 +1,26 @@
-<div  class="container"> 
+<div class="container">
     <!-- *ngIf ="let data of data" -->
-   
-	<div *ngFor="let val of data" class="row" id="ads">
-    
-    <div class="col-md-4">
-        <div class="card rounded">
-            <div class="card-image">
-                <img class="img-fluid" src="/assets/images/{{val.carNo}}.jpg" alt="Alternate Text" />
+
+    <h1>Car in bidding</h1>
+
+    <div *ngFor="let val of data" class="row" id="ads">
+
+        <div class="col-md-4">
+            <div class="card rounded">
+                <div class="card-image">
+                    <img class="img-fluid" src="/assets/images/{{val.carNo}}.jpg" alt="Alternate Text" />
+                </div>
+                <div class="card-image-overlay m-auto">
+                    <span class="card-detail-badge">car model:{{val.model}}</span>
+                    <span class="card-detail-badge">car no:{{val.carNo}}</span>
+                    <span class="card-detail-badge">used {{val.km}} km</span>
+                    <span class="card-detail-badge"> {{val.gearType}} Gear</span>
+                    <span class="card-detail-badge"> {{val.fuelType}}</span>
+                    <span class="card-detail-badge"> {{val.escrip}}</span>
+                    <span class="card-detail-badge">Base price:{{val.price}}</span>
+                </div>
+                <button (click)="gotobid()">Goto Bidding</button>
             </div>
-            <div  class="card-image-overlay m-auto">
-                <span class="card-detail-badge">car model:{{val.model}}</span>
-                <span class="card-detail-badge">car no:{{val.carNo}}</span>
-                <span class="card-detail-badge">used {{val.km}} km</span>
-                <span class="card-detail-badge"> {{val.gearType}} Gear</span>
-                <span class="card-detail-badge"> {{val.fuelType}}</span>
-                <span class="card-detail-badge"> {{val.escrip}}</span>
-                <span class="card-detail-badge">Base price:{{val.price}}</span>
-            </div>
-            <button (click)="gotobid()">Goto Bidding</button>
+        </div>
+    </div>
 </div>

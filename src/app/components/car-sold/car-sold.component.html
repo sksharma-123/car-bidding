@@ -1,24 +1,25 @@
-<div  class="container"> 
-    <!-- *ngIf ="let data of data" -->
-   
-	<div *ngFor="let val of cars" class="row" id="ads">
-    
+<div class="container">
+  <h1>Car sold</h1>
+  <!-- *ngIf ="let data of data" -->
+  <div *ngFor="let val of cars" class="row" id="ads">
     <div class="col-md-4">
-        <div class="card rounded">
-            <div class="card-image">
-                <img class="img-fluid" src="/assets/images/{{val.carNo}}.jpg" alt="Alternate Text" />
-            </div>
-            <div  class="card-image-overlay m-auto">
-                <span class="card-detail-badge">car model:{{val.model}}</span>
-                <span class="card-detail-badge">car no:{{val.carNo}}</span>
-                <span class="card-detail-badge">used {{val.km}} km</span>
-                <span class="card-detail-badge"> {{val.gearType}} Gear</span>
-                <span class="card-detail-badge"> {{val.fuelType}}</span>
-                <span class="card-detail-badge"> {{val.descrip}}</span>
-                <span class="card-detail-badge">Base price:{{val.price}}</span>
-            </div>
+      <div class="card rounded">
+        <div class="card-image">
+          <img class="img-fluid" src="/assets/images/{{val.carNo}}.jpg" alt="Alternate Text" />
+        </div>
+        <div class="card-image-overlay m-auto">
+          <span class="card-detail-badge">car model:{{val.model}}</span>
+          <span class="card-detail-badge">car no:{{val.carNo}}</span>
+          <span class="card-detail-badge">used {{val.km}} km</span>
+          <span class="card-detail-badge"> {{val.gearType}} Gear</span>
+          <span class="card-detail-badge"> {{val.fuelType}}</span>
+          <span class="card-detail-badge"> {{val.descrip}}</span>
+          <span class="card-detail-badge">Base price:{{val.price}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
-
 
 
 

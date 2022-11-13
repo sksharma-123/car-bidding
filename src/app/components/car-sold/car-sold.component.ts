@@ -14,6 +14,8 @@ export class CarSoldComponent implements OnInit {
   }
 
   cars:any;
+
+  
   getSoldCars(){
     this.http.get("http://localhost:8081/car/status/1",)
     .subscribe((cars)=>

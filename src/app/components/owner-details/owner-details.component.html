@@ -3,8 +3,8 @@
         <div class="form-holder">
             <div class="form-content">
                 <div class="form-items">
-                    <h3>Owner Details</h3>
-                    <p>Fill in the data below.</p>
+                    <h3 class="text-center">Owner Details</h3>
+                    <p class="text-center">Fill in the data below.</p>
                     <form class="requires-validation" novalidate>
 
                         <div class="col-md-12">
@@ -19,14 +19,12 @@
                             <div class="invalid-feedback">Email field cannot be blank!</div>
                         </div>
 
-
-
-
                         <div class="col-md-12">
-                            <input class="form-control" type="number" name="number" placeholder="Phone number" required>
-                            <div class="valid-feedback"> field is valid!</div>
-                            <div class="invalid-feedback">field cannot be blank!</div>
+                            <input class="form-control" type="text" name="number" placeholder="Phone" required>
+                            <div class="valid-feedback">Email field is valid!</div>
+                            <div class="invalid-feedback">Email field cannot be blank!</div>
                         </div>
+
 
                         <div class="col-md-12">
                             <input class="form-control" type="text" name="name" placeholder="Address" required>
@@ -35,17 +33,24 @@
                         </div>
 
 
-                        <div class="form-check">
+                        <div class="form-check mt-3">
                             <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
                             <label class="form-check-label">I confirm that all data are correct</label>
                             <div class="invalid-feedback">Please confirm that the entered data are all correct!</div>
                         </div>
                         <div class="form-button mt-3">
-                            <button (click)="addOwner()" type="submit" routerLinkActive="active">Register</button>
+                            <button (click)="addOwner()" class="btn btn-primary" type="submit"
+                                routerLinkActive="active">Register</button>
                         </div>
                     </form>
                 </div>
             </div>
         </div>
+    </div>
+</div>
+<div
+    class="d-flex flex-column flex-md-row text-center text-md-start justify-content-between py-4 px-4 px-xl-5 bg-primary">
+    <div class="text-white mb-1 mb-md-0">
+        Copyright © 2020. All rights reserved.
     </div>
 </div>
